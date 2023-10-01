@@ -1,0 +1,11 @@
+.info {
+    padding: 50px 0;
+
+    &__text {
+        color: $text-color;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 20px 0;
+    }
+}

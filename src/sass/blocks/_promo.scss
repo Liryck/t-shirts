@@ -1,0 +1,35 @@
+.promo {
+    width: 100%;
+    min-height: 350px;
+    height: calc(100vh - 55px);
+    background-color: #fff;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+    }
+
+    &__img {
+        width: 400px;
+    }
+
+    &__texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-left: 100px;
+    }
+
+    &__text {
+        margin: 20px 0 30px 0;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        color: $text-color;
+        
+    }
+
+}

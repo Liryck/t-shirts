@@ -1,0 +1,43 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/slick';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: Montserrat;
+}
+
+.conteiner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 36px;
+    line-height: normal;
+    font-weight: 700;
+    color: $text-color;
+    text-align: center;
+    margin-bottom: 0;
+    &_shadow {
+        text-shadow: 1px 1px 6px #fff;
+    }
+    &_fz30 {
+        font-size: 30px;
+    }
+    &_fz16 {
+        font-size: 16px;
+    }
+    &_tal {
+        text-align: left;
+    }
+
+}
+
+@import 'blocks/header';
+@import 'blocks/button';
+@import 'blocks/promo';
+@import 'blocks/catalog';
+@import 'blocks/info';
+@import 'base/media';

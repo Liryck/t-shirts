@@ -1,0 +1,47 @@
+.header {
+    display: block;
+    width: 100%;
+    max-height: 75px;
+    padding: 10px 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        display: flex;
+    }
+    
+    &__logo {
+        height: 55px;
+        margin-right: 30px;
+        margin-top: -8px;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 400px;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__menu-item {
+        display: inline-block;
+        list-style: none;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        text-decoration: none;
+        cursor: pointer;
+        a {
+            color: $text-color;
+            text-decoration: none;
+        }
+    }
+}
