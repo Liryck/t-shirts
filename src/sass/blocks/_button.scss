@@ -26,16 +26,22 @@
     background: #fff;
     border: none;
     transition: all .3s;
-    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #fff;
+    box-shadow: 6px 6px 12px #d9d9d9, -6px -6px 12px #fff;
+    // box-shadow:  15px 15px 30px #d9d9d9,
+    //          -15px -15px 30px #ffffff;
 
-    &_mt15 {
-        margin-top: 15px;
-       }
+    &_margin-center {
+        display: block;
+        margin: 0 auto;
+    }
    }
    
    
    .button:active {
-    color: #666;
-    box-shadow: inset 4px 4px 12px #c5c5c5,
+    color: $text-color;
+    box-shadow: inset 4px 4px 12px #d9d9d9,
                 inset -4px -4px 12px #ffffff;
+    // background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    // box-shadow:  15px 15px 30px #d9d9d9,
+    //             -15px -15px 30px #ffffff;
    }
