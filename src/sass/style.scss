@@ -8,6 +8,10 @@
     font-family: Montserrat;
 }
 
+body {
+    position: relative;
+}
+
 .conteiner {
     max-width: 1140px;
     margin: 0 auto;
@@ -42,4 +46,5 @@
 @import 'blocks/catalog';
 @import 'blocks/info';
 @import 'blocks/footer';
+@import 'blocks/modal';
 @import 'base/media';
