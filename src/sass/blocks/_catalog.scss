@@ -25,6 +25,14 @@
                     -35px -35px 70px #ffffff;
     }
 
+    &__product-link {
+        // color: $text-color;
+        text-decoration: none;
+        :hover {
+            color: $text-color;
+        }
+    }
+
     &__img {
         height: 250px;
         margin-bottom: 15px;
