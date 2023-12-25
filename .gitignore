@@ -9,6 +9,9 @@
 # production
 /build
 
+# mailer
+/mailer
+
 # misc
 .DS_Store
 .env.local

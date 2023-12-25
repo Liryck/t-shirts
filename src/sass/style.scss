@@ -13,7 +13,7 @@ body {
 }
 
 .conteiner {
-    max-width: 1140px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -30,11 +30,14 @@ body {
     &_fz30 {
         font-size: 30px;
     }
-    &_fz16 {
-        font-size: 16px;
+    &_fz20 {
+        font-size: 20px;
     }
     &_tal {
         text-align: left;
+    }
+    &_mb10 {
+        margin-bottom: 10px;
     }
 
 }

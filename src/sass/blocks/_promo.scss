@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     min-height: 350px;
-    height: calc(100vh - 55px);
+    height: 100vh;
     background-color: #fff;
 
     &__wrapper {
@@ -10,14 +10,17 @@
         align-items: center;
         position: absolute;
         top: 55%;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     &__img {
         width: 400px;
+        height: auto;
     }
 
     &__texts {
+        width: 700px;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -25,12 +28,12 @@
     }
 
     &__text {
+        max-width: 560px;
         margin: 20px 0 30px 0;
         font-size: 18px;
         font-weight: 700;
         line-height: 28px;
         color: $text-color;
-        
     }
 
 }

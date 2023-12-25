@@ -8,17 +8,17 @@
         min-height: 480px;
         padding: 40px;
         display: grid;
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-columns: repeat(2, 1fr);
         border-radius: 50px;
         background: #ffffff;
-        box-shadow:  35px 35px 70px #d9d9d9,
-                    -35px -35px 70px #ffffff;
+        box-shadow:  10px 10px 20px #d9d9d9,
+                    -10px -10px 20px #ffffff;
     }
     &__carousel {
         display: flex;
         justify-content: center;
         img {
-            height: 100%;
+            width: 400px;
         }
     }
 
@@ -36,13 +36,14 @@
     &__table {
         margin-bottom: 20px;
         td {
-            padding: 3px 0;
+            padding: 5px 0;
+            width: 150px;
         }
         tr {
             :first-child {
                 font-size: 16px;
                 font-weight: 700;
-                padding-right: 30px;
+                
             }
             .fz20 {
                 font-size: 20px;
@@ -56,7 +57,7 @@
     }
 
     &__price {
-        margin-left: 35px;
+        margin-right: 35px;
         font-size: 30px;
         font-weight: 700;
         color: $text-color;

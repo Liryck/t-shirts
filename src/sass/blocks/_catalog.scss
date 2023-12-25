@@ -6,8 +6,8 @@
     &__items {
         margin-top: 50px;
         display: grid;
-        grid-template: 400px / repeat(3, 1fr);
-        grid-auto-rows: 400px;
+        grid-template: minmax(400px,auto) / repeat(3, 1fr);
+        grid-auto-rows: minmax(400px,auto);
         gap: 30px;
         justify-content: center;
     }
@@ -23,6 +23,10 @@
         background: #ffffff;
         box-shadow:  35px 35px 70px #d9d9d9,
                     -35px -35px 70px #ffffff;
+        transition: all 1s;
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 
     &__product-link {
@@ -35,12 +39,20 @@
 
     &__img {
         height: 250px;
+        width: auto;
         margin-bottom: 15px;
     }
 
+    &__offer {
+        margin-top: 25px;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__price {
-        font-size: 16px;
-        font-weight: 400;
+        font-size: 20px;
+        font-weight: 700;
         line-height: normal;
         margin: 10px 0;
         color: $text-color;
