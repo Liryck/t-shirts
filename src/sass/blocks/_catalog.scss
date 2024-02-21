@@ -3,6 +3,10 @@
     min-height: 600px;
     background-color: #fff;
 
+    &__products {
+        margin-top: 50px;
+    }
+
     &__items {
         margin-top: 50px;
         display: grid;
@@ -12,17 +16,27 @@
         justify-content: center;
     }
 
+    .carousel {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        &__item {
+            margin-right: 25px;
+        }
+    }
+
     &__item {
+        margin: 20px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 400px;
         min-height: 400px;
         padding: 18px;
         border-radius: 50px;
         background: #ffffff;
-        box-shadow:  35px 35px 70px #d9d9d9,
-                    -35px -35px 70px #ffffff;
+        box-shadow:  13px 13px 25px #d9d9d9,
+        -13px -13px 25px #ffffff;
         transition: all 1s;
         &:hover {
             transform: scale(1.05);

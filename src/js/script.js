@@ -1,90 +1,73 @@
-// Modal
-const modalTrigger = document.querySelectorAll('[data-modal]'),
-      modalClose = document.querySelector('[data-close]'),
-      modal = document.querySelector('.modal');
+$(document).ready(function(){
+    // Modal
 
-function openModal() {
-    modal.classList.add('show');
-    modal.classList.remove('hide');
-    document.body.style.overflow = 'hidden';
-    // clearInterval(modalTimerId);
-}
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
 
-function closeModal() {
-    modal.classList.add('hide');
-    modal.classList.remove('show');
-    document.body.style.overflow = '';
-}
+    $('[data-modal=order]').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('[data-title]').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        })
+    });
 
-modalTrigger.forEach(modalTrigger => {
-    modalTrigger.addEventListener('click', openModal);
-});
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #thx, #order').fadeOut('slow');
+    });
 
-modalClose.addEventListener('click', () => {
-    closeModal();
-});
+    // Form Validate
 
-modal.addEventListener('click', (e) => {
-    if(e.target === modal) {
-    closeModal();
-    
-    }
-});
-
-document.addEventListener('keydown', (e) => {
-    if (e.code === "Escape" && modal.classList.contains('show')) {
-    closeModal();
-    }
-});
-
-    //Validate form
-
-    function valideForms(form) {
+    function validateForms(form){
         $(form).validate({
             rules: {
                 name: {
                     required: true,
-                    minlength: 2
+                    minlength: 3,
+                    maxlength: 10
                 },
-                phone: "required",
-                email: {
-                    required: true,
-                    email: true
-                }
+                phone: "required"
             },
             messages: {
                 name: {
                     required: "Будь ласка, введіть своє ім'я",
-                    minlength: jQuery.validator.format("Введіть як мінімум {4} символа!")
-                },
-                phone: "Будь ласка введіть свій номер телефона",
-            }
+                    minlength: jQuery.validator.format("Введіть мінімум {0} символів!"),
+                    maxlength: jQuery.validator.format("Максимум {0} символів!")
+                  },
+                phone: "Будь ласка, введіть свій номер телефону"
+            },
+            errorClass: "form__error"
         });
-    }
+    };
 
-    valideForms('form');
+    validateForms('#consultation form');
+    validateForms('#order form');
 
-    $('input[name=phone]').mask("+38 (999) 999-9999");
+    // Phone mask
 
+    $('[name=phone]').mask("+38 (999) 999-99-99");
 
     // Sending email
-    $('form').submit(function(e) {
-        e.preventDefault();                 //відмінити стандартну поведінку браузера
 
-        if(!$(this).valid()) {
-            return;                         //заборона відправки пустої форми
+    $('form').submit(function(e) {
+        e.preventDefault();
+
+        if (!$(this).valid()) {
+            return;
         }
 
-        $.ajax({                            //технологія обміну данними без перезавантаження сторінки
-            type: "POST",                   //відправка
-            url: "mailer/smart.php",        //файл для роботи з сервером
-            data: $(this).serialize()       //вказуємо яку інформацію відправляємо на сервер
-        }).done(function() {                //обробка відповіді від сервера
-            $(this).find("form__input").val("");  //очистити поля форми
-            $('form').fadeOut();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
             $('.overlay, #thx').fadeIn('slow');
 
-            $('form').trigger('reset');     //оновити форму
+            $('form').trigger('reset');
         });
-        return false;                       //повторити, якщо помилка
+        return false;
     });
+
+});

@@ -11,13 +11,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="robots" content="noindex, nofollow, max-image-preview:large, max-snippet:-1" />
     <title>Футболки "Тризуб"</title>
     <meta name="description" content="Магазин українських футболок. Продаж футболок на українську тематику">
+    <link rel="canonical" href="https://kramnytsya.com.ua/futbolka/"/>
     <link rel="shortcut icon" type="image/png" href="icons/favicon/favicon-32x32.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/libs/slick.min.css"/>
 	<link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
@@ -41,7 +43,7 @@
                             <a href="index.html#info">Доставка і оплата</a>
                         </li>
                     </menu>
-                    <button data-modal class="button">Замовити</button>
+                    <button data-modal="consultation" class="button">Замовити</button>
                 </div>
                 <div class="header__mobile">
                     <div class="header__humburger">
@@ -64,7 +66,7 @@
                     
                 </div>
                 <div class="product__right">
-                    <h1 class="title title_fz30 title_tal">Футболка "Тризуб"</h1>
+                    <h1 data-title class="title title_fz30 title_tal">Футболка "Тризуб"</h1>
                     <div class="product__id">id: 102011</div>
                     <table class="product__table">
                         <!-- <div class="title title_fz16">Характеристики</div> -->
@@ -102,7 +104,7 @@
                     </table>
                     <div class="product__offer">
                         <div class="product__price">799 грн.</div>
-                        <buttom data-modal class="button">Замовити</buttom>
+                        <buttom data-modal="order" class="button">Замовити</buttom>
                     </div>
                 </div>
             </div>
@@ -131,24 +133,50 @@
         </div>
     </footer>
 
-    <div class="modal hide">
-        <form class="form">
-			<div data-close class="form__close">
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="title title_mb10">Залиште заявку</div>
+            <div class="modal__descr">і наш менеджер зв'яжеться з Вами<br>на протязі 20 хвилин</div>
+            <div data-close class="modal__close">
 				&times;
 			</div>
-            <ul class="wrapper">
-				<li style="--i:4;"><div class="input">Залишити заявку</div></li>
-            	<li style="--i:3;"><input class="input" type="text" placeholder="Ім'я" required=""></li>
-            	<li style="--i:2;"><input class="input" placeholder="Номер телефону" required="" name="phone"></li>
-            
-            	<!-- <li style="--i:4;"><input class="input" type="text" placeholder="Name" required=""></li>
-            	<li style="--i:3;"><input class="input" placeholder="Phone number" required="" name="phone"></li>
-            	<li style="--i:2;"><input class="input" type="email" placeholder="E-mail" required="" name="email"></li> -->
-            	<button style="--i:1;">Відправити</button>
-            </ul>
-          </form>
+            <form class="form">
+                <input class="form__input" minlength="3" name="name" placeholder="Ваше ім'я" type="text">
+                <input class="form__input" name="phone" placeholder="Ваш телефон" type="tel">
+                <button class="button button_mc">Замовити</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="title title_mb10">Ваше замовлення:</div>
+            <div class="modal__descr">Замовлення</div>
+            <div data-close class="modal__close">
+				&times;
+			</div>
+            <form class="form">
+                <label name="title" class="modal__descr"></label>
+                <input class="form__input" minlength="3" name="name" placeholder="Ваше ім'я" type="text">
+                <input class="form__input" name="phone" placeholder="Ваш телефон" type="tel">
+                <div name="title" class="form__order"></div>
+                <button class="button button_mc">Замовити</button>
+            </form>
+        </div>
+
+        <div class="modal" id="thx">
+            <div class="title title_mb10">Дякуємо за замовлення</div>
+            <div class="modal__descr">Очікуйте дзвінок від менеджера</div>
+            <div data-close class="modal__close">
+				&times;
+			</div>
+        </div>
+        
     </div>
     
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>  
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -25,6 +25,15 @@
         max-width: 960px;
     }
 
+    .header {
+        &__right {
+            display: none;
+        }
+        &__mobile {
+            display: block;
+        }
+    }
+
     .promo {
         &__texts {
             width: 460px;
@@ -42,12 +51,6 @@
 @media (max-width: 992px) {
     .conteiner {
         max-width: 720px;
-    }
-
-    .header {
-        &__menu {
-            margin: 0;
-        }
     }
 
     .promo {
@@ -96,14 +99,6 @@
 @media (max-width: 768px) {
     .conteiner {
         max-width: 540px;
-    }
-    .header {
-        &__right {
-            display: none;
-        }
-        &__mobile {
-            display: block;
-        }
     }
     .promo {
         &__wrapper {
