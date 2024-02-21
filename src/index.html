@@ -20,7 +20,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/libs/slick.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -38,13 +37,13 @@
                             <a href="#promo">Головна</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#catalog">Футболки</a>
+                            <a href="#t-shirt">Футболки</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#catalog">Акрилові пазли</a>
+                            <a href="#puzzle">Акрилові пазли</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#catalog">Свічки</a>
+                            <a href="#candle">Свічки</a>
                         </li>
                         <li class="header__menu-item">
                             <a href="#info">Доставка і оплата</a>
@@ -119,11 +118,11 @@
             <h2 class="title">Каталог товарів</h2>
 
             <div class="catalog__products">
-                <h3 class="title title_fz30">Футболки</h3>
+                <h3 id="t-shirt" class="title title_fz30">Футболки</h3>
 
                 <div class="catalog__items">
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="futbolka-one" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Футболка "Один"</div>
                         </a>
@@ -133,7 +132,7 @@
                         </div>
                     </div>
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="futbolka-two" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Футболка "Два"</div>
                         </a>
@@ -143,7 +142,7 @@
                         </div>
                     </div>
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="futbolka-three" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Футболка "Три"</div>
                         </a>
@@ -153,7 +152,7 @@
                         </div>
                     </div>
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="futbolka-four" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Футболка "Чотири"</div>
                         </a>
@@ -162,8 +161,9 @@
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
+
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="futbolka-five" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Футболка "П'ять"</div>
                         </a>
@@ -172,15 +172,26 @@
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
+
+                    <div class="catalog__item">
+                        <a href="futbolka-six" class="catalog__product-link">
+                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
+                            <div data-title class="title title_fz20">Футболка "Шість"</div>
+                        </a>
+                        <div class="catalog__offer">
+                            <div class="catalog__price">600 грн.</div>
+                            <button data-modal="order" class="button">Замовити</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="catalog__products">
-                <h3 class="title title_fz30">Акрилові пазли</h3>
+                <h3 id="puzzle" class="title title_fz30">Акрилові пазли</h3>
 
                 <div class="catalog__items">
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="puzzle-one" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Акриловий пазл "Один"</div>
                         </a>
@@ -189,18 +200,9 @@
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
+                    
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
-                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
-                            <div data-title class="title title_fz20">Акриловий пазл "Один"</div>
-                        </a>
-                        <div class="catalog__offer">
-                            <div class="catalog__price">600 грн.</div>
-                            <button data-modal="order" class="button">Замовити</button>
-                        </div>
-                    </div>
-                    <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="puzzle-two" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Акриловий пазл "Два"</div>
                         </a>
@@ -209,8 +211,9 @@
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
+
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="puzzle-three" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Акриловий пазл "Три"</div>
                         </a>
@@ -219,8 +222,9 @@
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
+
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="puzzle-four" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Акриловий пазл "Чотири"</div>
                         </a>
@@ -229,8 +233,9 @@
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
+
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="puzzle-five" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Акриловий пазл "П'ять"</div>
                         </a>
@@ -239,15 +244,16 @@
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
+
                 </div>
             </div>
 
             <div class="catalog__products">
-                <h3 class="title title_fz30">Свічки</h3>
+                <h3 id="candle" class="title title_fz30">Свічки</h3>
 
                 <div class="catalog__items">
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="candle-one" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Свічка "Один"</div>
                         </a>
@@ -257,7 +263,7 @@
                         </div>
                     </div>
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="candle-two" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Свічка "Два"</div>
                         </a>
@@ -267,7 +273,7 @@
                         </div>
                     </div>
                     <div class="catalog__item">
-                        <a href="futbolka.html" class="catalog__product-link">
+                        <a href="candle-three" class="catalog__product-link">
                             <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
                             <div data-title class="title title_fz20">Свічка "Три"</div>
                         </a>
@@ -335,10 +341,8 @@
 				&times;
 			</div>
             <form class="form">
-                <label name="title" class="modal__descr"></label>
                 <input class="form__input" minlength="3" name="name" placeholder="Ваше ім'я" type="text">
                 <input class="form__input" name="phone" placeholder="Ваш телефон" type="tel">
-                <div name="title" class="form__order"></div>
                 <button class="button button_mc">Замовити</button>
             </form>
         </div>
