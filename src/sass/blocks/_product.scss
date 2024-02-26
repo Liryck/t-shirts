@@ -19,6 +19,7 @@
         justify-content: center;
         img {
             width: 400px;
+            height: fit-content;
         }
     }
 
@@ -37,7 +38,7 @@
         margin-bottom: 20px;
         td {
             padding: 5px 0;
-            width: 150px;
+            min-width: 150px;
         }
         tr {
             :first-child {

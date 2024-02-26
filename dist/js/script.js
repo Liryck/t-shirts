@@ -26,8 +26,8 @@ $(document).ready(function(){
           checkbox = document.getElementById('checkbox');
 
     checkbox.addEventListener('click', (e) => {
-        mobMenu.classList.toggle('header__mob-menu_active')
-    })
+        mobMenu.classList.toggle('header__mob-menu_active');
+    });
 
     // Form Validate
 
