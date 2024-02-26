@@ -26,6 +26,9 @@
     }
 
     .header {
+        &__logo {
+            margin-top: 0;
+        }
         &__right {
             display: none;
         }
@@ -44,6 +47,13 @@
     .advantages {
         &__item {
             width: 220px;
+        }
+    }
+
+    .catalog {
+        &__items {
+            grid-template: minmax(400px,auto)/repeat(2,1fr);
+            gap: 0;
         }
     }
 }
@@ -78,6 +88,19 @@
         &__items {
             grid-template: minmax(400px,auto)/repeat(2,1fr);
             gap: 20px;
+        }
+        &__item {
+            width: 350px;
+        }
+        &__offer {
+            margin-top: 20px;
+        }
+        &__price {
+            font-size: 18px;
+        }
+        .button {
+            width: 115px;
+            padding: 7px 10px;
         }
     }
 
@@ -126,19 +149,26 @@
         }
 
         &__item {
+            width: 100%;
             padding: 30px;
         }
 
         .title_fz20 {
-            font-size: 24px;
+            font-size: 28px;
+        }
+
+        &__offer {
+            justify-content: space-around;
         }
 
         &__price {
-            font-size: 20px;
-            margin: 15px 0;
+            font-size: 24px;
+            margin: 8px 0;
+        }
+        .button {
+            width: 150px;
         }
     }
-
 
 }
 
@@ -146,9 +176,47 @@
     .conteiner {
         max-width: 85%;
     }
+
+    .promo {
+        &__img {
+            width: 200px;
+        }
+        &__text {
+            margin: 20px 0;
+            font-size: 16px;
+        }
+    }
     .advantages {
         &__items {
             grid-template: minmax(300px,auto)/1fr;
+        }
+    }
+    .catalog {
+        &__items {
+            grid-template: 1fr / 1fr;
+            gap: 0;
+        }
+
+        &__offer {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__price {
+            margin: 0 0 20px 0;
+        }
+        .button {
+            width: 200px;
+            font-size: 20px;
+        }
+    }
+
+    .overlay {
+        .modal {
+            width: 80%;
+            .title {
+                font-size: 30px;
+            }
         }
     }
 
@@ -189,8 +257,7 @@
             tr {
                 :first-child {
                     padding-right: 10px;
-                }
-                
+                }   
             }
         }
 

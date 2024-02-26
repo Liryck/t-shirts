@@ -16,6 +16,19 @@ $(document).ready(function(){
         $('.overlay, #consultation, #thx, #order').fadeOut('slow');
     });
 
+    // $('#checkbox').click(function(){
+    //     $('.header__mob-menu').toggleClass('header__mob-menu_active');
+    // });
+
+    // Mobile Menu
+
+    const mobMenu = document.querySelector('.header__mob-menu'),
+          checkbox = document.getElementById('checkbox');
+
+    checkbox.addEventListener('click', (e) => {
+        mobMenu.classList.toggle('header__mob-menu_active')
+    })
+
     // Form Validate
 
     function validateForms(form){

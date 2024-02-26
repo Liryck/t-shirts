@@ -13,7 +13,7 @@
         grid-template: minmax(400px,auto) / repeat(3, 1fr);
         grid-auto-rows: minmax(400px,auto);
         gap: 30px;
-        justify-content: center;
+        justify-items: center;
     }
 
     .carousel {
@@ -46,8 +46,12 @@
     &__product-link {
         // color: $text-color;
         text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
         :hover {
             color: $text-color;
+            cursor: pointer;
         }
     }
 

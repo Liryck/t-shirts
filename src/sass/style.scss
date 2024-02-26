@@ -1,11 +1,12 @@
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/slick';
+// @import 'libs/fonts';
 
 @import 'base/variables';
 @import 'base/mixins';
 
 * {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
