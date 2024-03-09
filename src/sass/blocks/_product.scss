@@ -14,13 +14,53 @@
         box-shadow:  10px 10px 20px #d9d9d9,
                     -10px -10px 20px #ffffff;
     }
-    &__carousel {
+
+    &__slider {
         display: flex;
+        position: relative;
         justify-content: center;
         img {
             width: 400px;
-            height: fit-content;
+            height: auto; 
         }
+
+        &-wrapper {
+            overflow: hidden;
+            width: 400px;
+        }
+
+        &-inner {
+            display: flex;
+            transition: all 0.5s;
+        }
+
+        &-prev {
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            svg {
+                height: 40px;
+                width: 100%;
+            }
+        }
+        &-next {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            svg {
+                height: 40px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__slide {
+        width: 400px;
+        height: fit-content;
     }
 
     &__right {

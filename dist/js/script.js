@@ -29,6 +29,109 @@ $(document).ready(function(){
         mobMenu.classList.toggle('header__mob-menu_active');
     });
 
+    // Slider
+    // 
+    
+    // Slider
+    const slides = document.querySelectorAll('.product__slide'),
+        prev = document.querySelector('.product__slider-prev'),
+        next = document.querySelector('.product__slider-next'),
+        slidesWrapper = document.querySelector('.product__slider-wrapper'),
+        slidesField = document.querySelector('.product__slider-inner'),
+        width = window.getComputedStyle(slidesWrapper).width;
+
+    let offset = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    slidesField.style.width = 100 * slides.length + '%';
+
+    slides.forEach(slide => {
+    slide.style.width = width;
+    });
+
+    if (slides.length <= 1) {
+        prev.style.display = 'none';
+        next.style.display = 'none';
+    }
+
+    next.addEventListener('click', nextSlide);
+    prev.addEventListener('click', prevSlide);
+
+    slidesWrapper.addEventListener('touchstart', (event) => {
+    touchStartX = event.touches[0].clientX;
+    });
+
+    slidesWrapper.addEventListener('touchmove', (event) => {
+    touchEndX = event.touches[0].clientX;
+    });
+
+    slidesWrapper.addEventListener('touchend', () => {
+    const difference = touchStartX - touchEndX;
+    if (Math.abs(difference) > 50) { // додайте додаткову перевірку, щоб уникнути випадкових дотиків
+    if (difference > 0) {
+        nextSlide();
+    } else {
+        prevSlide();
+    }
+    }
+    });
+
+    const slideSwipe = setInterval(nextSlide, 3500);
+
+    function nextSlide() {
+    if (offset == +width.slice(0, width.length - 2) * (slides.length - 1)) {
+    offset = 0;
+    } else {
+    offset += +width.slice(0, width.length - 2);
+    }
+
+    slidesField.style.transform = `translateX(-${offset}px)`;
+    }
+
+    function prevSlide() {
+    if (offset == 0) {
+    offset = +width.slice(0, width.length - 2) * (slides.length - 1);
+    } else {
+    offset -= +width.slice(0, width.length - 2);
+    }
+
+    slidesField.style.transform = `translateX(-${offset}px)`;
+    }
+
+
+
+    // Simple slider:
+
+    // showSlides(slideIndex);
+
+    // function showSlides(n) {
+    //     if (n > slides.length) {
+    //         slideIndex = 1;
+    //     }
+
+    //     if (n < 1) {
+    //         slideIndex = slides.length;
+    //     }
+
+    //     slides.forEach(item => item.style.display = 'none');
+
+    //     slides[slideIndex - 1].style.display = 'block';
+    // }
+
+    // function plusSlides(n) {
+    //     showSlides(slideIndex += n);
+    // }
+
+    // prev.addEventListener('click', () => {
+    //     plusSlides(-1);
+    // });
+
+    // next.addEventListener('click', () => {
+    //     plusSlides(1);
+    // });
+
+
     // Form Validate
 
     function validateForms(form){

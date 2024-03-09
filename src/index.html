@@ -99,28 +99,28 @@
             <div class="advantages__items">
                 <div class="advantages__item">
                     <div class="advantages__icon">
-                        <img src="icons/advantage.svg" alt="advantages">
+                        <img src="icons/adv_ukraine.svg" alt="Advantages Ukraine - Kramnytsya UA">
                     </div>
                    <div class="advantages__title">Українське виробництво</div>
                    <div class="advantages__descr">Made in Ukraine. Більшість товарів виробляються в Україні</div>
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__icon">
-                        <img src="icons/advantage.svg" alt="advantages">
+                        <img src="icons/adv_quality.svg" alt="Advantages good quality - Kramnytsya UA">
                     </div>
                     <div class="advantages__title">Висока якість</div>
                     <div class="advantages__descr">Ми обираємо товари тільки високої якості, щоб вони радували Вас довгий час</div>
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__icon">
-                        <img src="icons/advantage.svg" alt="advantages">
+                        <img src="icons/adv_money.svg" alt="Advantages price - Kramnytsya UA">
                     </div>
                     <div class="advantages__title">Найкращі ціни</div>
                     <div class="advantages__descr">Якісний товар по найкращим цінам. Частина прибутку йде на виготовлення дронів для ЗСУ </div>
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__icon">
-                        <img src="icons/advantage.svg" alt="advantages">
+                        <img src="icons/adv_delivery.svg" alt="Advantages delivery - Kramnytsya UA">
                     </div>
                     <div class="advantages__title">Швидка доставка</div>
                     <div class="advantages__descr">Ми маємо великий склад, тому ми швидко виготовляємо та відправляємо замовлення</div>
@@ -137,69 +137,186 @@
                 <h3 id="t-shirt" class="title title_fz30">Футболки</h3>
 
                 <div class="catalog__items">
+
                     <div class="catalog__item">
                         <a href="futbolka-one" class="catalog__product-link">
-                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
-                            <div data-title class="title title_fz20">Футболка "Один"</div>
+                            <img data-color="grafit" src="img/t-shirts/hasevych/hasevych-grafit.png" alt="Футболка графітова Воля Народам - Крамниця ЮА" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
+                            <img data-color="grey" src="img/t-shirts/hasevych/hasevych-grey.png" alt="Футболка сіра Воля Народам - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="haki" src="img/t-shirts/hasevych/hasevych-haki.png" alt="Футболка хакі Воля Народам - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="jeans" src="img/t-shirts/hasevych/hasevych-jeans.png" alt="Футболка джинсова Воля Народам - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="white" src="img/t-shirts/hasevych/hasevych-white.png" alt="Футболка біла Воля Народам - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="black" src="img/t-shirts/hasevych/hasevych-black.png" alt="Футболка чорна Воля Народам - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="bright-blue" src="img/t-shirts/hasevych/hasevych-bright-blue.png" alt="Футболка яскраво-синя Воля Народам - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="cobalt" src="img/t-shirts/hasevych/hasevych-cobalt.png" alt="Футболка кобальт Воля Народам - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <div data-title class="title title_fz20">Футболка "Воля народам"</div>
                         </a>
+                        <!-- <div class="catalog__select">
+                            <div class="title title_fz20">Колір:</div>
+                            <ul class="catalog__colors">
+                                <li data-color="white" title="Білий" class="catalog__color catalog__color_white"></li>
+                                <li data-color="black" title="Чорний" class="catalog__color catalog__color_black"></li>
+                                <li data-color="grafit" title="Графітовий" class="catalog__color catalog__color_grafit"></li>
+                                <li data-color="grey" title="Сірий" class="catalog__color catalog__color_grey"></li>
+                                <li data-color="haki" title="Хакі" class="catalog__color catalog__color_haki"></li>
+                                <li data-color="jeans" title="Джинсовий" class="catalog__color catalog__color_jeans"></li>
+                                <li data-color="bright-blue" title="Яскраво-Синій" class="catalog__color catalog__color_bright-blue"></li>
+                                <li data-color="cobalt" title="Кобальт" class="catalog__color catalog__color_cobalt"></li>
+                            </ul>
+                        </div> -->
+
+                        <div class="catalog__selector">
+                            <div class="title title_fz20">Колір:</div>
+                            <select class="catalog__points">
+                                <option value="Білий" class="catalog__point catalog__point_white">Білий <span class="catalog__point_white"></span></option>
+                                <option value="Чорний" class="catalog__point catalog__point_black">Чорний<span class="catalog__point_black"></span></option>
+                                <option selected value="Графіт" class="catalog__point catalog__point_grafit">Графіт<span class="catalog__point_grafit"></span></option>
+                                <option value="Сірий" class="catalog__point catalog__point_grey">Сірий<span class="catalog__point_grey"></span></option>
+                                <option value="Хакі" class="catalog__point catalog__point_haki">Хакі<span class="catalog__point_haki"></span></option>
+                                <option value="Джинсовий" class="catalog__point catalog__point_jeans">Джинсовий<span class="catalog__point_jeans"></span></option>
+                                <option value="Яскраво-Синій" class="catalog__point catalog__point_bright-blue">Яскраво-Синій<span class="catalog__point_bright-blue"></span></option>
+                                <option value="Кобальт" class="catalog__point catalog__point_cobalt">Кобальт<span class="catalog__point_cobalt"></span></option>
+                            </select>
+                        </div>
                         <div class="catalog__offer">
-                            <div class="catalog__price">600 грн.</div>
+                            <div class="catalog__price">700 грн.</div>
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
+
                     <div class="catalog__item">
                         <a href="futbolka-two" class="catalog__product-link">
-                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
-                            <div data-title class="title title_fz20">Футболка "Два"</div>
+                            <img data-color="haki" src="img/t-shirts/unr/unr-haki.png" alt="Футболка хакі УНР - Крамниця ЮА" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
+                            <img data-color="black" src="img/t-shirts/unr/unr-black.png" alt="Футболка чорна УНР - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="grafit" src="img/t-shirts/unr/unr-grafit.png" alt="Футболка графітова УНР - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="bright-blue" src="img/t-shirts/unr/unr-bright-blue.png" alt="Футболка яскраво-синя УНР - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="cobalt" src="img/t-shirts/unr/unr-cobalt.png" alt="Футболка кобальт УНР - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="grey" src="img/t-shirts/unr/unr-grey.png" alt="Футболка сіра УНР - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="white" src="img/t-shirts/unr/unr-white.png" alt="Футболка біла УНР - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="jeans" src="img/t-shirts/unr/unr-jeans.png" alt="Футболка джинсова УНР - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <div data-title class="title title_fz20">Футболка "УНР"</div>
                         </a>
+                        <!-- <div class="catalog__select">
+                            <div class="title title_fz20">Колір:</div>
+                            <ul class="catalog__colors">
+                                <li data-color="white" title="Білий" class="catalog__color catalog__color_white"></li>
+                                <li data-color="black" title="Чорний" class="catalog__color catalog__color_black"></li>
+                                <li data-color="grafit" title="Графітовий" class="catalog__color catalog__color_grafit"></li>
+                                <li data-color="grey" title="Сірий" class="catalog__color catalog__color_grey"></li>
+                                <li data-color="haki" title="Хакі" class="catalog__color catalog__color_haki"></li>
+                                <li data-color="jeans" title="Джинсовий" class="catalog__color catalog__color_jeans"></li>
+                                <li data-color="bright-blue" title="Яскраво-Синій" class="catalog__color catalog__color_bright-blue"></li>
+                                <li data-color="cobalt" title="Кобальт" class="catalog__color catalog__color_cobalt"></li>
+                            </ul>
+                        </div> -->
+                        <div class="catalog__selector">
+                            <div class="title title_fz20">Колір:</div>
+                            <select class="catalog__points">
+                                <option value="Білий" class="catalog__point catalog__point_white">Білий <span class="catalog__point_white"></span></option>
+                                <option value="Чорний" class="catalog__point catalog__point_black">Чорний<span class="catalog__point_black"></span></option>
+                                <option value="Графіт" class="catalog__point catalog__point_grafit">Графіт<span class="catalog__point_grafit"></span></option>
+                                <option value="Сірий" class="catalog__point catalog__point_grey">Сірий<span class="catalog__point_grey"></span></option>
+                                <option selected value="Хакі" class="catalog__point catalog__point_haki">Хакі<span class="catalog__point_haki"></span></option>
+                                <option value="Джинсовий" class="catalog__point catalog__point_jeans">Джинсовий<span class="catalog__point_jeans"></span></option>
+                                <option value="Яскраво-Синій" class="catalog__point catalog__point_bright-blue">Яскраво-Синій<span class="catalog__point_bright-blue"></span></option>
+                                <option value="Кобальт" class="catalog__point catalog__point_cobalt">Кобальт<span class="catalog__point_cobalt"></span></option>
+                            </select>
+                        </div>
                         <div class="catalog__offer">
-                            <div class="catalog__price">600 грн.</div>
+                            <div class="catalog__price">700 грн.</div>
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
+
                     <div class="catalog__item">
                         <a href="futbolka-three" class="catalog__product-link">
-                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
-                            <div data-title class="title title_fz20">Футболка "Три"</div>
+                            <img data-color="cobalt" src="img/t-shirts/motherland/motherland-cobalt.png" alt="Футболка кобальт Вільна Батьківщина - Крамниця ЮА" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
+                            <img data-color="black" src="img/t-shirts/motherland/motherland-black.png" alt="Футболка чорна Вільна Батьківщина - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="bright-blue" src="img/t-shirts/motherland/motherland-bright-blue.png" alt="Футболка яскраво-синя Вільна Батьківщина - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="grafit" src="img/t-shirts/motherland/motherland-grafit.png" alt="Футболка графітова Вільна Батьківщина - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="grey" src="img/t-shirts/motherland/motherland-grey.png" alt="Футболка сіра Вільна Батьківщина - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="haki" src="img/t-shirts/motherland/motherland-haki.png" alt="Футболка хакі Вільна Батьківщина - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="jeans" src="img/t-shirts/motherland/motherland-jeans.png" alt="Футболка джинсова Вільна Батьківщина - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="white" src="img/t-shirts/motherland/motherland-white.png" alt="Футболка біла Вільна Батьківщина - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <div data-title class="title title_fz20">Футболка "Вільна Батьківщина"</div>
                         </a>
+                        <!-- <div class="catalog__select">
+                            <div class="title title_fz20">Колір:</div>
+                            <ul class="catalog__colors">
+                                <li data-color="white" title="Білий" class="catalog__color catalog__color_white"></li>
+                                <li data-color="black" title="Чорний" class="catalog__color catalog__color_black"></li>
+                                <li data-color="grafit" title="Графітовий" class="catalog__color catalog__color_grafit"></li>
+                                <li data-color="grey" title="Сірий" class="catalog__color catalog__color_grey"></li>
+                                <li data-color="haki" title="Хакі" class="catalog__color catalog__color_haki"></li>
+                                <li data-color="jeans" title="Джинсовий" class="catalog__color catalog__color_jeans"></li>
+                                <li data-color="bright-blue" title="Яскраво-Синій" class="catalog__color catalog__color_bright-blue"></li>
+                                <li data-color="cobalt" title="Кобальт" class="catalog__color catalog__color_cobalt"></li>
+                            </ul>
+                        </div> -->
+                        <div class="catalog__selector">
+                            <div class="title title_fz20">Колір:</div>
+                            <select class="catalog__points">
+                                <option value="Білий" class="catalog__point catalog__point_white">Білий <span class="catalog__point_white"></span></option>
+                                <option value="Чорний" class="catalog__point catalog__point_black">Чорний<span class="catalog__point_black"></span></option>
+                                <option value="Графіт" class="catalog__point catalog__point_grafit">Графіт<span class="catalog__point_grafit"></span></option>
+                                <option value="Сірий" class="catalog__point catalog__point_grey">Сірий<span class="catalog__point_grey"></span></option>
+                                <option value="Хакі" class="catalog__point catalog__point_haki">Хакі<span class="catalog__point_haki"></span></option>
+                                <option value="Джинсовий" class="catalog__point catalog__point_jeans">Джинсовий<span class="catalog__point_jeans"></span></option>
+                                <option value="Яскраво-Синій" class="catalog__point catalog__point_bright-blue">Яскраво-Синій<span class="catalog__point_bright-blue"></span></option>
+                                <option selected value="Кобальт" class="catalog__point catalog__point_cobalt">Кобальт<span class="catalog__point_cobalt"></span></option>
+                            </select>
+                        </div>
                         <div class="catalog__offer">
-                            <div class="catalog__price">600 грн.</div>
+                            <div class="catalog__price">700 грн.</div>
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
+
                     <div class="catalog__item">
                         <a href="futbolka-four" class="catalog__product-link">
-                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
-                            <div data-title class="title title_fz20">Футболка "Чотири"</div>
+                            <img data-color="bright-blue" src="img/t-shirts/vyshyvanka/vyshyvanka-bright-blue.png" alt="Футболка яскраво-синя Вишиванка - Крамниця ЮА" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
+                            <img data-color="white" src="img/t-shirts/vyshyvanka/vyshyvanka-white.png" alt="Футболка Вишиванка біла- Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="jeans" src="img/t-shirts/vyshyvanka/vyshyvanka-jeans.png" alt="Футболка Вишиванка джинсова - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="haki" src="img/t-shirts/vyshyvanka/vyshyvanka-haki.png" alt="Футболка Вишиванка хакі - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="grey" src="img/t-shirts/vyshyvanka/vyshyvanka-grey.png" alt="Футболка Вишиванка сіра - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="grafit" src="img/t-shirts/vyshyvanka/vyshyvanka-grafit.png" alt="Футболка Вишиванка графітова - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="cobalt" src="img/t-shirts/vyshyvanka/vyshyvanka-cobalt.png" alt="Футболка Вишиванка кобальт - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <img data-color="black" src="img/t-shirts/vyshyvanka/vyshyvanka-black.png" alt="Футболка Вишиванка чорна - Крамниця ЮА" class="catalog__img" loading="lazy" target="_blank">
+                            <div data-title class="title title_fz20">Футболка "Вишиванка"</div>
                         </a>
+                        <!-- <div class="catalog__select">
+                            <div class="title title_fz20">Колір:</div>
+                            <ul class="catalog__colors">
+                                <li data-color="white" title="Білий" class="catalog__color catalog__color_white"></li>
+                                <li data-color="black" title="Чорний" class="catalog__color catalog__color_black"></li>
+                                <li data-color="grafit" title="Графітовий" class="catalog__color catalog__color_grafit"></li>
+                                <li data-color="grey" title="Сірий" class="catalog__color catalog__color_grey"></li>
+                                <li data-color="haki" title="Хакі" class="catalog__color catalog__color_haki"></li>
+                                <li data-color="jeans" title="Джинсовий" class="catalog__color catalog__color_jeans"></li>
+                                <li data-color="bright-blue" title="Яскраво-Синій" class="catalog__color catalog__color_bright-blue"></li>
+                                <li data-color="cobalt" title="Кобальт" class="catalog__color catalog__color_cobalt"></li>
+                            </ul>
+                        </div> -->
+                        <div class="catalog__selector">
+                            <div class="title title_fz20">Колір:</div>
+                            <select class="catalog__points">
+                                <option value="Білий" class="catalog__point catalog__point_white">Білий <span class="catalog__point_white"></span></option>
+                                <option value="Чорний" class="catalog__point catalog__point_black">Чорний<span class="catalog__point_black"></span></option>
+                                <option value="Графіт" class="catalog__point catalog__point_grafit">Графіт<span class="catalog__point_grafit"></span></option>
+                                <option value="Сірий" class="catalog__point catalog__point_grey">Сірий<span class="catalog__point_grey"></span></option>
+                                <option value="Хакі" class="catalog__point catalog__point_haki">Хакі<span class="catalog__point_haki"></span></option>
+                                <option value="Джинсовий" class="catalog__point catalog__point_jeans">Джинсовий<span class="catalog__point_jeans"></span></option>
+                                <option selected value="Яскраво-Синій" class="catalog__point catalog__point_bright-blue">Яскраво-Синій<span class="catalog__point_bright-blue"></span></option>
+                                <option value="Кобальт" class="catalog__point catalog__point_cobalt">Кобальт<span class="catalog__point_cobalt"></span></option>
+                            </select>
+                        </div>
                         <div class="catalog__offer">
-                            <div class="catalog__price">600 грн.</div>
+                            <div class="catalog__price">700 грн.</div>
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
 
-                    <div class="catalog__item">
-                        <a href="futbolka-five" class="catalog__product-link">
-                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
-                            <div data-title class="title title_fz20">Футболка "П'ять"</div>
-                        </a>
-                        <div class="catalog__offer">
-                            <div class="catalog__price">600 грн.</div>
-                            <button data-modal="order" class="button">Замовити</button>
-                        </div>
-                    </div>
-
-                    <div class="catalog__item">
-                        <a href="futbolka-six" class="catalog__product-link">
-                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
-                            <div data-title class="title title_fz20">Футболка "Шість"</div>
-                        </a>
-                        <div class="catalog__offer">
-                            <div class="catalog__price">600 грн.</div>
-                            <button data-modal="order" class="button">Замовити</button>
-                        </div>
-                    </div>
                 </div>
+
             </div>
 
             <div class="catalog__products">
@@ -208,52 +325,63 @@
                 <div class="catalog__items">
                     <div class="catalog__item">
                         <a href="puzzle-kyiv" class="catalog__product-link">
-                            <img src="img/puzzles/kyiv-puzzle-kramnytsya-min.png" alt="Акриловий пазл Київ - Крамниця ЮА" class="catalog__img" target="_blank">
+                            <img src="img/puzzles/kyiv-puzzle-kramnytsya-min.png" alt="Акриловий пазл Київ - Крамниця ЮА" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
                             <div data-title class="title title_fz20">Акриловий пазл<br>"Київ"</div>
                         </a>
                         <div class="catalog__offer">
-                            <div class="catalog__price">799 грн.</div>
+                            <div class="catalog__price">990 грн.</div>
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
                     <div class="catalog__item">
                         <a href="puzzle-earth" class="catalog__product-link">
-                            <img src="img/puzzles/earth-puzzle-kramnytsya-min.png" alt="Акриловий пазл Планета Земля - Крамниця ЮА" class="catalog__img" target="_blank">
+                            <img src="img/puzzles/earth-puzzle-kramnytsya-min.png" alt="Акриловий пазл Планета Земля - Крамниця ЮА" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
                             <div data-title class="title title_fz20">Акриловий пазл<br>"Планета Земля"</div>
                         </a>
                         <div class="catalog__offer">
-                            <div class="catalog__price">799 грн.</div>
+                            <div class="catalog__price">990 грн.</div>
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
                     <div class="catalog__item">
                         <a href="puzzle-moon" class="catalog__product-link">
-                            <img src="img/puzzles/moon-puzzle-kramnytsya-min.png" alt="Акриловий пазл Місяць - Крамниця ЮА" class="catalog__img" target="_blank">
+                            <img src="img/puzzles/moon-puzzle-kramnytsya-min.png" alt="Акриловий пазл Місяць - Крамниця ЮА" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
                             <div data-title class="title title_fz20">Акриловий пазл<br>"Місяць"</div>
                         </a>
                         <div class="catalog__offer">
-                            <div class="catalog__price">799 грн.</div>
+                            <div class="catalog__price">990 грн.</div>
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
                     <div class="catalog__item">
                         <a href="puzzle-mona-lisa" class="catalog__product-link">
-                            <img src="img/puzzles/mona-lisa-puzzle-kramnytsya-min.png" alt="Акриловий пазл Мона Ліза - Крамниця ЮА" class="catalog__img" target="_blank">
+                            <img src="img/puzzles/mona-lisa-puzzle-kramnytsya-min.png" alt="Акриловий пазл Мона Ліза - Крамниця ЮА" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
                             <div data-title class="title title_fz20">Акриловий пазл<br>"Мона Ліза"</div>
                         </a>
                         <div class="catalog__offer">
-                            <div class="catalog__price">799 грн.</div>
+                            <div class="catalog__price">990 грн.</div>
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
 
                     <div class="catalog__item">
                         <a href="puzzle-coliseum" class="catalog__product-link">
-                            <img src="img/puzzles/coliseum-puzzle-kramnytsya-min.png" alt="Акриловий пазл Колізей - Крамниця ЮА" class="catalog__img" target="_blank">
+                            <img src="img/puzzles/coliseum-puzzle-kramnytsya-min.png" alt="Акриловий пазл Колізей - Крамниця ЮА" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
                             <div data-title class="title title_fz20">Акриловий пазл<br>"Колізей"</div>
                         </a>
                         <div class="catalog__offer">
-                            <div class="catalog__price">799 грн.</div>
+                            <div class="catalog__price">990 грн.</div>
+                            <button data-modal="order" class="button">Замовити</button>
+                        </div>
+                    </div>
+
+                    <div class="catalog__item">
+                        <a href="puzzle-carpet" class="catalog__product-link">
+                            <img src="img/puzzles/carpet-puzzle-kramnytsya-min.png" alt="Акриловий пазл Килим - Крамниця ЮА" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
+                            <div data-title class="title title_fz20">Акриловий пазл<br>"Килим"</div>
+                        </a>
+                        <div class="catalog__offer">
+                            <div class="catalog__price">790 грн.</div>
                             <button data-modal="order" class="button">Замовити</button>
                         </div>
                     </div>
@@ -266,7 +394,7 @@
                 <div class="catalog__items">
                     <div class="catalog__item">
                         <a href="candle-one" class="catalog__product-link">
-                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
+                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
                             <div data-title class="title title_fz20">Свічка "Один"</div>
                         </a>
                         <div class="catalog__offer">
@@ -276,7 +404,7 @@
                     </div>
                     <div class="catalog__item">
                         <a href="candle-two" class="catalog__product-link">
-                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
+                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
                             <div data-title class="title title_fz20">Свічка "Два"</div>
                         </a>
                         <div class="catalog__offer">
@@ -286,7 +414,7 @@
                     </div>
                     <div class="catalog__item">
                         <a href="candle-three" class="catalog__product-link">
-                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img" target="_blank">
+                            <img src="img/футболка.png" alt="Футболка Тризуб" class="catalog__img catalog__img_active" loading="lazy" target="_blank">
                             <div data-title class="title title_fz20">Свічка "Три"</div>
                         </a>
                         <div class="catalog__offer">
@@ -296,13 +424,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <button class="prevBtn">
-                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="87.5" x2="40.5" y1="111" y2="64"/><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="40.5" x2="87.5" y1="64" y2="17"/></g></svg>
-            </button>
-            <button class="nextBtn">
-                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="40.5" x2="87.5" y1="17" y2="64"/><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="87.5" x2="40.5" y1="64" y2="111"/></g></svg>
-            </button> -->
         </div>
     </section>
 
@@ -324,7 +445,7 @@
     <footer class="footer">
         <div class="conteiner">
             <div class="footer__wrapper">
-                <img src="img/logo.png" alt="Крамниця ЮА" class="footer__img">
+                <img src="img/logo.png" alt="Крамниця ЮА" class="footer__img" loading="lazy">
                 <div class="creator">
                     Liryck &#169; 2023-2024
                 </div>
