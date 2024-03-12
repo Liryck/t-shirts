@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function(){
     // Modal
 
@@ -28,9 +30,6 @@ $(document).ready(function(){
     checkbox.addEventListener('click', (e) => {
         mobMenu.classList.toggle('header__mob-menu_active');
     });
-
-    // Slider
-    // 
     
     // Slider
     const slides = document.querySelectorAll('.product__slide'),
@@ -77,7 +76,7 @@ $(document).ready(function(){
     }
     });
 
-    const slideSwipe = setInterval(nextSlide, 3500);
+    const slideSwipe = setInterval(nextSlide, 3500); 
 
     function nextSlide() {
     if (offset == +width.slice(0, width.length - 2) * (slides.length - 1)) {
@@ -97,9 +96,11 @@ $(document).ready(function(){
     }
 
     slidesField.style.transform = `translateX(-${offset}px)`;
-    }
+    }    
 
+    // Color changing
 
+    
 
     // Simple slider:
 

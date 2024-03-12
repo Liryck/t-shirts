@@ -24,7 +24,7 @@
         align-items: center;
         width: 400px;
         min-height: 400px;
-        padding: 18px;
+        padding: 25px 18px;
         border-radius: 50px;
         background: #ffffff;
         box-shadow:  13px 13px 25px #d9d9d9,
@@ -52,23 +52,25 @@
         height: 250px;
         width: auto;
         margin-bottom: 15px;
+        &_w400 {
+            width: 400px;
+            height: auto; 
+        }
         &_active {
             display: block;
         }
-    }
-
-    &__select {
-        display: flex;
-        margin-top: 25px;
     }
 
     &__selector {
         display: flex;
         align-items: center;
         margin-top: 25px;
+        &_mtb20 {
+            margin: 20px 0;
+        }
     }
 
-    &__points {
+    &__colors {
         margin-left: 20px;
         height: 30px;
         padding: 5px;
@@ -79,7 +81,7 @@
                     -3px -3px 6px #ffffff;
     }
 
-    &__point {
+    &__color {
         margin-top: 20px;
 
         span {
@@ -117,52 +119,6 @@
         &_cobalt {
             background: #000066;
             color: #fff;
-        }
-    }
-
-    &__colors {
-        display: grid;
-        grid-template: 30px / repeat(4, 1fr);
-        grid-auto-rows: 30px;
-        row-gap: 10px;
-        column-gap: 20px;
-        justify-content: space-between;
-        margin: 0 0 0 10px;
-        list-style-type: none;
-        padding: 0;
-    }
-
-    &__color {
-        width: 25px;
-        height: 25px;
-        border-radius: 5px;
-        cursor: pointer;
-        box-shadow:  3px 3px 5px #d9d9d9,
-                    -3px -3px 5px #ffffff;
-        
-        &_white {
-            background: #ffffff;
-        }
-        &_black {
-            background: #000000;
-        }
-        &_grafit {
-            background: #333333;
-        }
-        &_grey {
-            background: #8F8F8F;
-        }
-        &_haki {
-            background: #999966;
-        }
-        &_jeans {
-            background: #333366;
-        }
-        &_bright-blue {
-            background: #3333CC;
-        }
-        &_cobalt {
-            background: #000066;
         }
     }
 

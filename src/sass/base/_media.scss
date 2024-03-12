@@ -18,6 +18,22 @@
             max-width: 640px;
         }
     }
+
+    .catalog {
+        &__item {
+            width: 350px;
+        }
+        &__offer {
+            margin-top: 20px;
+        }
+        &__price {
+            font-size: 18px;
+        }
+        .button {
+            width: 115px;
+            padding: 7px 10px;
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -102,19 +118,6 @@
         &__items {
             grid-template: minmax(400px,auto)/repeat(2,1fr);
             gap: 20px;
-        }
-        &__item {
-            width: 350px;
-        }
-        &__offer {
-            margin-top: 20px;
-        }
-        &__price {
-            font-size: 18px;
-        }
-        .button {
-            width: 115px;
-            padding: 7px 10px;
         }
     }
 
