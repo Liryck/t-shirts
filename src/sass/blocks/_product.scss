@@ -25,6 +25,7 @@
         }
 
         &-wrapper {
+            display: none;
             overflow: hidden;
             width: 400px;
         }
@@ -32,6 +33,10 @@
         &-inner {
             display: flex;
             transition: all 0.5s;
+        }
+
+        .active {
+            display: block;
         }
 
         &-prev {

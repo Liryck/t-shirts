@@ -257,6 +257,12 @@
                         -7px -7px 14px #ffffff;
         }
 
+        &__img {
+            &_h300 {
+                height: 250px;
+            }
+        }
+
         &__offer {
             flex-direction: column;
             align-items: center;

@@ -23,7 +23,7 @@
         flex-direction: column;
         align-items: center;
         width: 400px;
-        min-height: 400px;
+        min-height: 330px;
         padding: 25px 18px;
         border-radius: 50px;
         background: #ffffff;
@@ -33,6 +33,14 @@
         &:hover {
             transform: scale(1.05);
         }
+    }
+
+    &__img-wrapper {
+        display: none;
+    }
+
+    .active {
+        display: block;
     }
 
     &__product-link {
@@ -48,16 +56,16 @@
     }
 
     &__img {
-        display: none;
+        display: block;
         height: 250px;
         width: auto;
         margin-bottom: 15px;
+        &_h300 {
+            height: 300px;
+        }
         &_w400 {
             width: 400px;
             height: auto; 
-        }
-        &_active {
-            display: block;
         }
     }
 
